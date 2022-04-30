@@ -35,7 +35,7 @@ class AuthMothods {
             'username': user.displayName,
             'uid': user.uid,
             'profileimage': user.photoURL,
-            'email': user.email,
+            // 'email': user.email,
           });
         }
         res = true;
@@ -45,5 +45,13 @@ class AuthMothods {
       res = false;
     }
     return res;
+  }
+
+  void signOut() async {
+    try {
+      _auth.signOut();
+    } catch (e) {
+      print(e);
+    }
   }
 }

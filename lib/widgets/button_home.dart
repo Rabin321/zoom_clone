@@ -42,7 +42,8 @@ class ButtonHome extends StatelessWidget {
           const SizedBox(height: 10),
           Text(
             text,
-            style: const TextStyle(color: Color.fromARGB(255, 204, 203, 203)),
+            style: const TextStyle(
+                color: Color.fromARGB(255, 204, 203, 203), fontSize: 16),
           )
         ],
       ),
